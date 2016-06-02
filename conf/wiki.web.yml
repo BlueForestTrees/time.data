@@ -1,2 +1,1 @@
----
-sourceIndexDir: "${TIME_HOME}/indexes/merged/red"
+indexDir: ${TIME_HOME}/indexes/prod

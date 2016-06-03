@@ -1,4 +1,4 @@
 port: 9999
 webRoot: ${TIME_WEBROOT}
-uploadDir: ${TIME_HOME}/indexes/mergeables/append/
+uploadDir: ${TIME_HOME}/sources/live/
 ignoreTextAfterAny: ['Notes et références[', 'Bibliographie[', 'Liens externes[', 'Bibliographie[', 'Annexes[']

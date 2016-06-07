@@ -1,3 +1,2 @@
 appendBaseIndexDir: ${TIME_HOME}/indexes/mergeables/live/
 appendToDir: ${TIME_HOME}/indexes/prod/
-ignoreTextAfterAny: []

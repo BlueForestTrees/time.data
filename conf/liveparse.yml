@@ -1,4 +1,3 @@
-port: 9999
+port: 81
 webRoot: ${TIME_WEBROOT}
 uploadDir: ${TIME_HOME}/sources/live/
-ignoreTextAfterAny: ['Notes et références[', 'Bibliographie[', 'Liens externes[', 'Bibliographie[', 'Annexes[']

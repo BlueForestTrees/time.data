@@ -4,14 +4,13 @@ crawlStorageDir: ${TIME_HOME}/temp/wikiCrawl
 resumable: false
 nbCrawlers: 1
 politenessDelay: 25
-maxPages: 5000
-pageCountPrevision: 5000
-nbPageLog: 100
-nbPhraseLog: 1000
+maxPages: 100
+pageCountPrevision: 100
+nbPageLog: 10
+nbPhraseLog: 100
 urlFilter: .*(\\.(css|js|bmp|gif|jpe?g|png|tiff?|mid|mp2|mp3|mp4|wav|avi|mov|mpeg|ram|m4v|pdf|rm|smil|wmv|swf|wma|zip|rar|gz|svg|ogg|ogv|oga|djvu|webm))$
 contentExclusion: ['\t\t\t(Redirigé depuis']
-urlMustNotContain: ['fichier:','discussion_utilisateur:', 'discussion_utilisatrice:', 'utilisatrice:', '#', 'discussion_modèle:', 'discussion_mod%C3%A8le:', 'discussion:', 'spécial:', 'sp%c3%a9cial:', 'discussion_wikipédia:', 'discussion_wikipédia:', 'discussion_wikip%c3%a9dia:', 'cat%c3%a9gorie:', 'catégorie:', 'utilisateur:', 'projet:', 'discussion_projet:', 'aide:', 'wikipédia:', 'wikip%c3%a9dia:']
+urlMustNotContain: ['portail:','fichier:','discussion_utilisateur:', 'discussion_utilisatrice:', 'utilisatrice:', '#', 'discussion_modèle:', 'discussion_mod%C3%A8le:', 'discussion:', 'spécial:', 'sp%c3%a9cial:', 'discussion_wikipédia:', 'discussion_wikipédia:', 'discussion_wikip%c3%a9dia:', 'cat%c3%a9gorie:', 'catégorie:', 'utilisateur:', 'projet:', 'discussion_projet:', 'aide:', 'wikipédia:', 'wikip%c3%a9dia:']
 indexDir: ${TIME_HOME}/indexes/fresh/wiki/
 finalIndexDir: ${TIME_HOME}/indexes/mergeables/wiki
 urlMaxLength: 255
-urlMustNotContain: []

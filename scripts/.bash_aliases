@@ -1,0 +1,52 @@
+alias aliases="nano ~/.bash_aliases"
+alias ports="sudo netstat -tulpn"
+alias update="source ~/.bashrc && cp /home/pi/.bash_aliases /var/lib/time.data/scripts/.bash_aliases"
+alias psgrep='function _psgrep(){ ps -aux | grep "$1"; };_psgrep'
+
+
+# TIME
+alias t="sh /tomcat/apache-tomcat-8.0.30/bin/startup.sh"
+alias td="sh /tomcat/apache-tomcat-8.0.30/bin/startup-debug.sh"
+alias ts="sh /tomcat/apache-tomcat-8.0.30/bin/shutdown.sh"
+alias tsd="sh /tomcat/apache-tomcat-8.0.30/bin/shutdown-debug.sh"
+alias rabbit="java -jar /var/lib/time/messaging.console.jar"
+alias golog="cd /var/log/time && ls -l"
+alias gojars="cd /var/lib/time && ls -l"
+alias goconf="cd /var/lib/time.data && ls -l"
+alias gosystemd="cd /etc/systemd/system/"
+alias goscripts="cd /var/lib/time.data/scripts"
+
+#TIME LOGS
+alias tailmeta="tail -f /var/log/time/meta.to.index.log"
+
+#TIME SERVICES
+alias startmeta="sudo systemctl restart meta.to.index.service && statusmeta"
+alias stopmeta="sudo systemctl stop meta.to.index.service && statusmeta"
+alias statusmeta="systemctl status meta.to.index.service"
+alias statusall="systemctl status meta.to.index.service"
+
+# GIT
+alias rmorig="find . -name '*.orig' -type f -delete"
+alias st="git status"
+alias cho='function _checkout(){ git checkout "$1"; };_checkout'
+alias pull="git pull"
+alias push='function _push(){ git push; };_push'
+alias pushf='function _pushf(){ git push -f origin "$1"; };_pushf'
+alias stash="git stash"
+alias stash-pop="git stash pop"
+alias fetch="git fetch"
+alias branch='function _branch(){ git branch "$1"; git checkout "$1"; git push --set-upstream origin "$1"; };_branch'
+alias unbranch='function _unbranch(){ git branch -D "$1"; git push origin --delete "$1"; };_unbranch'
+alias branches="git branch -a"
+alias addAll="git add -A"
+alias add='function _add(){ git add --all "$1"; };_add'
+alias commit='function _commit(){ git commit -m "$1"; };_commit'
+alias amend='function _amend(){ git commit --amend; };_amend'
+alias uncommit='git reset HEAD~'
+alias reset='git reset'
+alias undo='function _unc(){ git checkout -- "$1" };_unc'
+alias rebase='function _rebase(){ git rebase "$1"; };_rebase'
+alias diff='function _diff(){ git diff "$1" };_diff'
+alias full='function _full(){ st && addAll && commit "$1" && push && st; };_full'
+alias seeall='data; database; indices; core; api; front;'
+alias gmerge='function _merge(){ git merge --no-ff "$1"; };_merge'

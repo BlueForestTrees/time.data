@@ -1,0 +1,3 @@
+phraseMaxLength: 500
+phraseMinLength: 70
+phraseMustNotStartWith: ['Catégories :']

@@ -1,0 +1,5 @@
+sourceDir: ${TIME_HOME}/sources/local.tika/
+indexDir: ${TIME_HOME}/indexes/mergeables/local.tika/
+urlMaxLength: 255
+urlMustNotContain: []
+nbPhraseLog: 500

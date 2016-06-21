@@ -1,6 +1,6 @@
 alias aliases="nano ~/.bash_aliases"
 alias ports="sudo netstat -tulpn"
-alias update="source ~/.bashrc && cp /home/pi/.bash_aliases /var/lib/time.data/scripts/.bash_aliases"
+alias update="source ~/.bashrc && cp /home/pi/.bash_aliases /var/lib/time.data/scripts/pi/.bash_aliases"
 alias psgrep='function _psgrep(){ ps -aux | grep "$1"; };_psgrep'
 alias portuse='function _portuse(){ sudo netstat -peant | grep "$1 "; };_portuse'
 
@@ -15,7 +15,7 @@ alias golog="cd /var/log/time && ls -l"
 alias gojars="cd /var/lib/time && ls -l"
 alias goconf="cd /var/lib/time.data && ls -l"
 alias gosystemd="cd /etc/systemd/system/"
-alias goscripts="cd /var/lib/time.data/scripts"
+alias goscripts="cd /var/lib/time.data/scripts/pi"
 
 #TIME LOGS
 alias tailmeta="tail -f /var/log/time/meta.to.index.log"

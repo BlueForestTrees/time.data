@@ -1,3 +1,3 @@
 port: 8081
-#webRoot: ${TIME_WEBROOT}
+#webRoot: {TIME_WEBROOT}
 uploadDir: ${TIME_HOME}/sources/live/

@@ -14,12 +14,14 @@ alias rabbit="java -jar /var/lib/time/messaging.console.jar"
 alias golog="cd /var/log/time && ls -l"
 alias gojars="cd /var/lib/time && ls -l"
 alias goconf="cd /var/lib/time.data/conf && ls -l"
-alias gosystemd="cd /etc/systemd/system/"
-alias goscripts="cd /var/lib/time.data/scripts/pi"
+alias gosystemd="cd /etc/systemd/system/ && ls -l"
+alias goscripts="cd /var/lib/time.data/scripts/pi && ls -l"
 
 #TIME LOGS
 alias flushlog="rm /var/log/time/*.log"
 alias tailmeta="tail -f /var/log/time/meta.to.index.log"
+alias taillive="tail -f /var/log/time/liveparse.log"
+alias tailman="tail -f /var/log/time/index.manage.log"
 
 #TIME SERVICES
 alias startmeta="sudo systemctl restart meta.to.index.service && statusmeta"
@@ -30,9 +32,17 @@ alias startlive="sudo systemctl restart liveparse.service && statuslive"
 alias stoplive="sudo systemctl stop liveparse.service && statuslive"
 alias statuslive="systemctl status liveparse.service"
 
-alias statusall="statusmeta && statuslive"
+alias startman="sudo systemctl restart index.manage.service && statusman"
+alias stopman="sudo systemctl stop index.manage.service && statusman"
+alias statusman="systemctl status index.manage.service"
+
+alias allstatuses="statusmeta; statuslive; statusman"
+alias allstart="startmeta; startlive; startman"
+alias allstop="stopmeta; stoplive; stopman"
 
 # GIT
+alias pullconf="git -C /var/lib/time.data pull"
+alias fullconf="cd /var/lib/time.data && full 'autopi' master && cd -"
 alias rmorig="find . -name '*.orig' -type f -delete"
 alias st="git status"
 alias cho='function _checkout(){ git checkout "$1"; };_checkout'

@@ -4,6 +4,7 @@ After=syslog.target
 
 [Service]
 User=pi
+WorkingDirectory=/var/lib/time
 ExecStart=/usr/bin/java -jar /var/lib/time/liveparse.jar
 SuccessExitStatus=143
 

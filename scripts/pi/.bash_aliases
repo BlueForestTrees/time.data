@@ -13,18 +13,24 @@ alias tsd="sh /tomcat/apache-tomcat-8.0.30/bin/shutdown-debug.sh"
 alias rabbit="java -jar /var/lib/time/messaging.console.jar"
 alias golog="cd /var/log/time && ls -l"
 alias gojars="cd /var/lib/time && ls -l"
-alias goconf="cd /var/lib/time.data && ls -l"
+alias goconf="cd /var/lib/time.data/conf && ls -l"
 alias gosystemd="cd /etc/systemd/system/"
 alias goscripts="cd /var/lib/time.data/scripts/pi"
 
 #TIME LOGS
+alias flushlog="rm /var/log/time/*.log"
 alias tailmeta="tail -f /var/log/time/meta.to.index.log"
 
 #TIME SERVICES
 alias startmeta="sudo systemctl restart meta.to.index.service && statusmeta"
 alias stopmeta="sudo systemctl stop meta.to.index.service && statusmeta"
 alias statusmeta="systemctl status meta.to.index.service"
-alias statusall="systemctl status meta.to.index.service"
+
+alias startlive="sudo systemctl restart liveparse.service && statuslive"
+alias stoplive="sudo systemctl stop liveparse.service && statuslive"
+alias statuslive="systemctl status liveparse.service"
+
+alias statusall="statusmeta && statuslive"
 
 # GIT
 alias rmorig="find . -name '*.orig' -type f -delete"

@@ -3,7 +3,9 @@ Description=meta.to.index
 After=syslog.target
 
 [Service]
+EnvironmentFile=/etc/time.env
 User=pi
+WorkingDirectory=/var/lib/time
 ExecStart=/usr/bin/java -jar /var/lib/time/meta.to.index.jar
 SuccessExitStatus=143
 

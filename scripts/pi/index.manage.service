@@ -3,7 +3,9 @@ Description=index.manage
 After=syslog.target
 
 [Service]
+EnvironmentFile=/etc/time.env
 User=pi
+WorkingDirectory=/var/lib/time
 ExecStart=/usr/bin/java -jar /var/lib/time/index.manage.jar
 SuccessExitStatus=143
 

@@ -42,18 +42,3 @@ alias gmerge='function _merge(){ git merge --no-ff "$1"; };_merge'
 #TIME
 alias time="cd /D/dev/time/Time/"
 alias tdata="cd /D/dev/time/data"
-
-
-
-#git checkout .
-#If you want to revert changes made to the index (i.e., that you have added), do this. Warning this will reset all of your unpushed commits to master!:
-#git reset
-
-#If you want to revert a change that you have committed, do this:
-#git revert ...
-
-#If you want to remove untracked files (e.g., new files, generated files):
-#git clean -f
-
-#Or untracked directories:
-#git clean -d

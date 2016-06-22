@@ -1,6 +1,6 @@
 [Unit]
 Description=index.manage
-After=syslog.target
+After=syslog.target rabbitmq-server.service
 
 [Service]
 EnvironmentFile=/etc/time.env

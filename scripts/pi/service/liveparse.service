@@ -3,7 +3,7 @@ Description=liveparse
 After=syslog.target rabbitmq-server.service
 
 [Service]
-EnvironmentFile=/etc/time.env
+EnvironmentFile=/var/lib/time.data/scripts/pi/time.env
 User=pi
 WorkingDirectory=/var/lib/time
 ExecStart=/usr/bin/java -jar /var/lib/time/liveparse.jar

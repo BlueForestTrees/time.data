@@ -13,7 +13,7 @@ alias tsd="sh /tomcat/apache-tomcat-8.0.30/bin/shutdown-debug.sh"
 alias rabbit="java -jar /var/lib/time/messaging.console.jar"
 alias golog="cd /var/log/time && ls -l"
 alias gojars="cd /var/lib/time && ls -l"
-alias goconf="cd /var/lib/time.data/conf && ls -l"
+alias goconf="cd /var/lib/time.data/conf/pi && ls -l"
 alias gosystemd="cd /etc/systemd/system/ && ls -l"
 alias goscripts="cd /var/lib/time.data/scripts/pi && ls -l"
 

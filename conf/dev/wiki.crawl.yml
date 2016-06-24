@@ -5,8 +5,8 @@ crawlStorageDir: ${TIME_HOME}/temp/wikiCrawl
 resumable: false
 nbCrawlers: 7
 politenessDelay: 25
-maxPages: 100000
-pageCountPrevision: 5000000 #used if maxPages is null
+#maxPages: 1000
+pageCountPrevision: 2400000 #used if maxPages is null
 nbPageLog: 1000
 nbPhraseLog: 100000
 urlFilter: .*(\\.(css|js|bmp|gif|jpe?g|png|tiff?|mid|mp2|mp3|mp4|wav|avi|mov|mpeg|ram|m4v|pdf|rm|smil|wmv|swf|wma|zip|rar|gz|svg|ogg|ogv|oga|djvu|webm))$

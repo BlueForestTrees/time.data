@@ -38,9 +38,13 @@ alias startweb="sudo systemctl restart time.web.service && statusweb"
 alias stopweb="sudo systemctl stop time.web.service && statusweb"
 alias statusweb="systemctl status time.web.service"
 
-alias allstatuses="statusmeta; statuslive; statusman; statusweb"
-alias allstart="startmeta; startlive; startman; startweb"
-alias allstop="stopmeta; stoplive; stopman; stopweb"
+alias startfront="sudo systemctl restart apache2.service && statusfront"
+alias stopfront="sudo systemctl stop apache2.service && statusfront"
+alias statusfront="systemctl status apache2.service"
+
+alias allstatuses="statusmeta; statuslive; statusman; statusweb; statusfront"
+alias allstart="startmeta; startlive; startman; startweb; startfront"
+alias allstop="stopmeta; stoplive; stopman; stopweb; stopfront"
 
 # GIT
 alias pullconf="git -C /var/lib/time.data pull"

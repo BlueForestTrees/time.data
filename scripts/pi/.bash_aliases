@@ -16,6 +16,7 @@ alias gojars="cd /var/lib/time && ls -l"
 alias goconf="cd /var/lib/time.data/conf/pi && ls -l"
 alias gosystemd="cd /etc/systemd/system/ && ls -l"
 alias goscripts="cd /var/lib/time.data/scripts/pi && ls -l"
+alias godata="cd /var/lib/time.data && ls -l"
 
 #TIME LOGS
 alias flushlog="rm /var/log/time/*.log"

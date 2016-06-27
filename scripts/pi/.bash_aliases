@@ -6,10 +6,6 @@ alias portuse='function _portuse(){ sudo netstat -peant | grep "$1 "; };_portuse
 
 
 # TIME
-alias t="sh /tomcat/apache-tomcat-8.0.30/bin/startup.sh"
-alias td="sh /tomcat/apache-tomcat-8.0.30/bin/startup-debug.sh"
-alias ts="sh /tomcat/apache-tomcat-8.0.30/bin/shutdown.sh"
-alias tsd="sh /tomcat/apache-tomcat-8.0.30/bin/shutdown-debug.sh"
 alias rabbit="java -jar /var/lib/time/messaging.console.jar"
 alias golog="cd /var/log/time && ls -l"
 alias gojars="cd /var/lib/time && ls -l"

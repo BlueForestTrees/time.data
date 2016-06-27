@@ -37,6 +37,10 @@ alias startman="sudo systemctl restart index.manage.service && statusman"
 alias stopman="sudo systemctl stop index.manage.service && statusman"
 alias statusman="systemctl status index.manage.service"
 
+alias startweb="sudo systemctl restart time.web.service && statusweb"
+alias stopweb="sudo systemctl stop time.web.service && statusweb"
+alias statusweb="systemctl status time.web.service"
+
 alias allstatuses="statusmeta; statuslive; statusman"
 alias allstart="startmeta; startlive; startman"
 alias allstop="stopmeta; stoplive; stopman"

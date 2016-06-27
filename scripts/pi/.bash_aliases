@@ -39,8 +39,8 @@ alias stopweb="sudo systemctl stop time.web.service && statusweb"
 alias statusweb="systemctl status time.web.service"
 
 alias allstatuses="statusmeta; statuslive; statusman; statusweb"
-alias allstart="startmeta; startlive; startman"
-alias allstop="stopmeta; stoplive; stopman"
+alias allstart="startmeta; startlive; startman; startweb"
+alias allstop="stopmeta; stoplive; stopman; stopweb"
 
 # GIT
 alias pullconf="git -C /var/lib/time.data pull"

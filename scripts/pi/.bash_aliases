@@ -38,7 +38,7 @@ alias startweb="sudo systemctl restart time.web.service && statusweb"
 alias stopweb="sudo systemctl stop time.web.service && statusweb"
 alias statusweb="systemctl status time.web.service"
 
-alias allstatuses="statusmeta; statuslive; statusman"
+alias allstatuses="statusmeta; statuslive; statusman; statusweb"
 alias allstart="startmeta; startlive; startman"
 alias allstop="stopmeta; stoplive; stopman"
 

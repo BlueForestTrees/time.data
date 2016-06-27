@@ -23,6 +23,7 @@ alias flushlog="rm /var/log/time/*.log"
 alias tailmeta="tail -f /var/log/time/meta.to.index.log"
 alias taillive="tail -f /var/log/time/liveparse.log"
 alias tailman="tail -f /var/log/time/index.manage.log"
+alias tailweb="tail -f /var/log/time/time.web.log"
 
 #TIME SERVICES
 alias startmeta="sudo systemctl restart meta.to.index.service && statusmeta"

@@ -13,6 +13,8 @@ alias goconf="cd /var/lib/time.data/conf/pi && ls -l"
 alias gosystemd="cd /etc/systemd/system/ && ls -l"
 alias goscripts="cd /var/lib/time.data/scripts/pi && ls -l"
 alias godata="cd /var/lib/time.data && ls -l"
+alias goapache="cd /etc/apache2 && ls -l"
+alias editapache="sudo nano /etc/apache2/sites-enabled/000-default.conf"
 
 #TIME LOGS
 alias flushlog="rm /var/log/time/*.log"
@@ -20,6 +22,7 @@ alias tailmeta="tail -f /var/log/time/meta.to.index.log"
 alias taillive="tail -f /var/log/time/liveparse.log"
 alias tailman="tail -f /var/log/time/index.manage.log"
 alias tailweb="tail -f /var/log/time/time.web.log"
+alias allcat="golog && cat meta.to.index.log && cat liveparse.log && cat index.manage.log && cat time.web.log"
 
 #TIME SERVICES
 alias startmeta="sudo systemctl restart meta.to.index.service && statusmeta"

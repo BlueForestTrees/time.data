@@ -22,7 +22,7 @@ alias tailmeta="tail -f /var/log/time/meta.to.index.log"
 alias taillive="tail -f /var/log/time/liveparse.log"
 alias tailman="tail -f /var/log/time/index.manage.log"
 alias tailweb="tail -f /var/log/time/time.web.log"
-alias allcat="golog && cat meta.to.index.log && cat liveparse.log && cat index.manage.log && cat time.web.log"
+alias allcat="golog && cat meta.to.index.log; cat liveparse.log; cat index.manage.log; cat time.web.log"
 
 #TIME SERVICES
 alias startmeta="sudo systemctl restart meta.to.index.service && statusmeta"

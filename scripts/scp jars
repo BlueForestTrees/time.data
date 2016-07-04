@@ -2,5 +2,6 @@ scp -P 6969 /D/dev/time/time/Time/time.liveparse/target/time.liveparse-1.0.0-SNA
 scp -P 6969 /D/dev/time/time/Time/time.meta.to.index/target/time.meta.to.index-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@histoires.xyz:/var/lib/time/meta.to.index.jar
 scp -P 6969 /D/dev/time/time/Time/time.index.manage/target/time.index.manage-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@histoires.xyz:/var/lib/time/index.manage.jar
 scp -P 6969 /D/dev/time/time/Time/time.web/target/time.web-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@histoires.xyz:/var/lib/time/time.web.jar
-scp -r -P 6969 /D/dev/time/time/Time/time.front/target/.* pi@histoires.xyz:/var/lib/time.web
+
+scp -r -P 6969 /D/dev/time/time/Time/time.front/target/.* pi@histoires.xyz:/var/www/time.web
 scp -r -P 6969 /home/slimane/time.data/indexes/mergeables/wiki pi@histoires.xyz:/var/lib/time.data/indexes/mergeables

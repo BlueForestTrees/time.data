@@ -1,3 +1,3 @@
-indexDir: "${TIME_HOME}/indexes/merged/blue"
+indexDir: "${TIME_HOME}/indexes/mergeables/wiki"
 port: 8080
 searchPhrasePageSize: 40

@@ -5,10 +5,10 @@ crawlStorageDir: ${TIME_HOME}/temp/wikiCrawl
 resumable: false
 nbCrawlers: 7
 politenessDelay: 25
-#maxPages: 1000
-pageCountPrevision: 2400000 #used if maxPages is null
-nbPageLog: 1000
-nbPhraseLog: 100000
+maxPages: 1000
+#pageCountPrevision: 2400000 #used if maxPages is null
+nbPageLog: 100
+nbPhraseLog: 1000
 urlFilter: .*(\\.(css|js|bmp|gif|jpe?g|png|tiff?|mid|mp2|mp3|mp4|wav|avi|mov|mpeg|ram|m4v|pdf|rm|smil|wmv|swf|wma|zip|rar|gz|svg|ogg|ogv|oga|djvu|webm))$
 contentExclusion: ['\t\t\t(Redirigé depuis']
 urlMustNotContain: ['discussion_mediawiki:','portail:','fichier:','discussion_utilisateur:', 'discussion_utilisatrice:', 'utilisatrice:', '#', 'discussion_modèle:', 'discussion_mod%C3%A8le:', 'discussion:', 'spécial:', 'sp%c3%a9cial:', 'discussion_wikipédia:', 'discussion_wikipédia:', 'discussion_wikip%c3%a9dia:', 'cat%c3%a9gorie:', 'catégorie:', 'utilisateur:', 'projet:', 'discussion_projet:', 'aide:', 'wikipédia:', 'wikip%c3%a9dia:']

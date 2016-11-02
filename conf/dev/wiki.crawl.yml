@@ -1,5 +1,4 @@
 seedUrl: https://fr.wikipedia.org/wiki/Portail:Accueil
-#seedUrl: https://fr.wikipedia.org/wiki/28_d%C3%A9cembre
 baseUrl: https://fr.wikipedia.org/wiki/
 crawlStorageDir: ${TIME_HOME}/temp/wikiCrawl
 resumable: false

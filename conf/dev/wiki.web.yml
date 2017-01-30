@@ -1,4 +1,4 @@
 ---
-indexDir: "${TIME_HOME}/indexes/merged/blue"
+indexDir: "${TIME_HOME}/indexes/merged/red"
 port: 7070
 searchPhrasePageSize: 40

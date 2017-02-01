@@ -45,9 +45,9 @@ alias startapache="sudo systemctl restart apache2.service && statusapache"
 alias stopapache="sudo systemctl stop apache2.service && statusapache"
 alias statusapache="systemctl status apache2.service"
 
-alias allstatuses="statusmeta; statuslive; statusman; statusweb; statusapache"
-alias allstart="startmeta; startlive; startman; startweb; startapache"
-alias allstop="stopmeta; stoplive; stopman; stopweb; stopapache"
+alias statusall="statusmeta; statuslive; statusman; statusweb; statusapache"
+alias startall="startmeta; startlive; startman; startweb; startapache"
+alias stopall="stopmeta; stoplive; stopman; stopweb; stopapache"
 
 # GIT
 alias pullconf="git -C /var/lib/time.data pull"

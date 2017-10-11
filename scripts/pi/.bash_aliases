@@ -44,6 +44,8 @@ alias statusweb="systemctl status time.web.service"
 alias startapache="sudo systemctl restart apache2.service && statusapache"
 alias stopapache="sudo systemctl stop apache2.service && statusapache"
 alias statusapache="systemctl status apache2.service"
+alias restartapache="stopapache; startapache;"
+
 
 alias statusall="statusmeta; statuslive; statusman; statusweb; statusapache"
 alias startall="startmeta; startlive; startman; startweb; startapache"

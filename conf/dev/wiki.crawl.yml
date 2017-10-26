@@ -2,8 +2,8 @@ seedUrl: https://fr.wikipedia.org/wiki/Big_Bang
 baseUrl: https://fr.wikipedia.org/wiki/
 crawlStorageDir: ${TIME_HOME}/temp/wikiCrawl
 resumable: false
-nbCrawlers: 5
-politenessDelay: 100
+nbCrawlers: 7
+politenessDelay: 50
 #maxPages: 10
 pageCountPrevision: 2400000 #used if maxPages is null
 nbPageLog: 100

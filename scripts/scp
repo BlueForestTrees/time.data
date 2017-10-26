@@ -4,8 +4,8 @@ scp -P 6969 /D/dev/time/time/Time/time.index.manage/target/time.index.manage-1.0
 scp -P 6969 /home/slimane/time/Time/time.messaging.console/target/time.messaging.console-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@histoires.xyz:/var/lib/time/messaging.console.jar
 
 #BACK
-scp -P 6969 /D/dev/time/time/Time/time.web/target/time.web-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@histoires.xyz:/var/lib/time/time.web.jar
-ssh -p 6969 pi@histoires.xyz "sudo systemctl restart time.web.service && systemctl status time.web.service"
+scp -P 22 /C/Dev/repos/time/Time/time.web/target/time.web-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@pi2:/var/lib/time/time.web.jar
+ssh -p 22 pi@pi2 "sudo systemctl restart time.web.service && systemctl status time.web.service"
 
 #FRONT
 scp -r -P 6969 /d/dev/time/Time/time.front/target/.* pi@histoires.xyz:/var/www/time.web
@@ -15,3 +15,7 @@ scp -r -P 6969 /home/slimane/time.data/indexes/mergeables/wiki pi@histoires.xyz:
 
 mkdir /var/lib/time.data/indexes/mergeables
 rsync -rvz -e 'ssh -p 6969' --progress /home/slimane/time.data/indexes/mergeables/wiki pi@histoires.xyz:/var/lib/time.data/indexes/mergeables
+
+#authent auto
+ssh-keygen -t rsa -b 2048
+ssh-copy-id pi@pi2

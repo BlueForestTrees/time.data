@@ -5,7 +5,7 @@ scp -P 6969 /home/slimane/time/Time/time.messaging.console/target/time.messaging
 
 #CRAWL
 scp -P 22 /C/Dev/repos/time/Time/time.crawler.wiki/target/time.crawler.wiki-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@pi2:/var/lib/time/wiki.crawl.jar
-java -jar /var/lib/time/wiki.crawl.jar
+nohup java -jar /var/lib/time/wiki.crawl.jar > /var/lib/time.data/temp/crawl.log 2> /var/lib/time.data/temp/crawl.err.log < /dev/null &
 
 #BACK
 scp -P 22 /C/Dev/repos/time/Time/time.web/target/time.web-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@pi2:/var/lib/time/time.web.jar

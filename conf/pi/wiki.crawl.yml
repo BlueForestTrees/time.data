@@ -1,12 +1,11 @@
 seedUrl: https://fr.wikipedia.org/wiki/Portail:Accueil
-#seedUrl: https://fr.wikipedia.org/wiki/28_d%C3%A9cembre
 baseUrl: https://fr.wikipedia.org/wiki/
 crawlStorageDir: ${TIME_HOME}/temp/wikiCrawl
 resumable: false
 nbCrawlers: 7
-politenessDelay: 25
-maxPages: 100000
-pageCountPrevision: 5000000 #used if maxPages is null
+politenessDelay: 50
+#maxPages: 100000
+pageCountPrevision: 2400000 #used if maxPages is null
 nbPageLog: 1000
 nbPhraseLog: 100000
 urlFilter: .*(\\.(css|js|bmp|gif|jpe?g|png|tiff?|mid|mp2|mp3|mp4|wav|avi|mov|mpeg|ram|m4v|pdf|rm|smil|wmv|swf|wma|zip|rar|gz|svg|ogg|ogv|oga|djvu|webm))$

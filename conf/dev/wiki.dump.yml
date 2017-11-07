@@ -1,11 +1,11 @@
-﻿seedUrl: https://fr.wikipedia.org/wiki/Big_Bang
+seedUrl: https://fr.wikipedia.org/wiki/Big_Bang
 baseUrl: https://fr.wikipedia.org/wiki/
-crawlStorageDir: ${TIME_HOME}/temp/wikiCrawl
+dumpStorageDir: C:\Users\slima\Documents\frwiki-20171020-pages-articles-multistream.xml
 resumable: false
-nbCrawlers: 4
-politenessDelay: 80
-#maxPages: 100
-pageCountPrevision: 4000000 #used if maxPages is null
+nbCrawlers: 3
+politenessDelay: 50
+maxPages: 1000
+pageCountPrevision: 2400000 #used if maxPages is null
 nbPageLog: 100
 nbPhraseLog: 1000
 urlFilter: .*(\\.(css|js|bmp|gif|jpe?g|png|tiff?|mid|mp2|mp3|mp4|wav|avi|mov|mpeg|ram|m4v|pdf|rm|smil|wmv|swf|wma|zip|rar|gz|svg|ogg|ogv|oga|djvu|webm))$

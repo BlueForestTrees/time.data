@@ -8,11 +8,11 @@ scp -P 22 /C/Dev/repos/time/Time/time.crawler.wiki/target/time.crawler.wiki-1.0.
 nohup java -jar /var/lib/time/wiki.crawl.jar > /var/lib/time.data/temp/crawl.log 2> /var/lib/time.data/temp/crawl.err.log < /dev/null &
 
 #BACK
-scp -P 22 /C/Dev/repos/time/Time/time.web/target/time.web-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@pi2:/var/lib/time/time.web.jar
-ssh -p 22 pi@pi2 "sudo systemctl restart time.web.service && systemctl status time.web.service"
+scp -P 22 /C/Dev/repos/time/Time/time.api/target/time.api-1.0.0-SNAPSHOT-jar-with-dependencies.jar pi@pi2:/var/lib/time/time.api.jar
+ssh -p 22 pi@pi2 "sudo systemctl restart time.api.service && systemctl status time.api.service"
 
 #FRONT
-scp -r -P 6969 /d/dev/time/Time/time.front/target/.* pi@histoires.xyz:/var/www/time.web
+scp -r -P 6969 /d/dev/time/Time/time.front/target/.* pi@histoires.xyz:/var/www/time.api
 
 #INDEX
 scp -r -P 6969 /home/slimane/time.data/indexes/mergeables/wiki pi@histoires.xyz:/var/lib/time.data/indexes/mergeables

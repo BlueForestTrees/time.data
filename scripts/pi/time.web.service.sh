@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-sudo ln -s /var/lib/time.data/scripts/pi/service/time.web.service /etc/systemd/system/time.web.service
-sudo chown 664 /var/lib/time.data/scripts/pi/service/time.web.service
-sudo systemctl enable time.web.service
-systemctl status time.web.service
+sudo ln -s /var/lib/time.data/scripts/pi/service/time.api.service /etc/systemd/system/time.api.service
+sudo chown 664 /var/lib/time.data/scripts/pi/service/time.api.service
+sudo systemctl enable time.api.service
+systemctl status time.api.service

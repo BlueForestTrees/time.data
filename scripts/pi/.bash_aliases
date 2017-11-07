@@ -21,8 +21,8 @@ alias flushlog="rm /var/log/time/*.log"
 alias tailmeta="tail -f /var/log/time/meta.to.index.log"
 alias taillive="tail -f /var/log/time/liveparse.log"
 alias tailman="tail -f /var/log/time/index.manage.log"
-alias tailweb="tail -f /var/log/time/time.web.log"
-alias allcat="golog && cat meta.to.index.log; cat liveparse.log; cat index.manage.log; cat time.web.log"
+alias tailweb="tail -f /var/log/time/time.api.log"
+alias allcat="golog && cat meta.to.index.log; cat liveparse.log; cat index.manage.log; cat time.api.log"
 
 #TIME SERVICES
 alias startmeta="sudo systemctl restart meta.to.index.service && statusmeta"
@@ -37,9 +37,9 @@ alias startman="sudo systemctl restart index.manage.service && statusman"
 alias stopman="sudo systemctl stop index.manage.service && statusman"
 alias statusman="systemctl status index.manage.service"
 
-alias startweb="sudo systemctl restart time.web.service && statusweb"
-alias stopweb="sudo systemctl stop time.web.service && statusweb"
-alias statusweb="systemctl status time.web.service"
+alias startweb="sudo systemctl restart time.api.service && statusweb"
+alias stopweb="sudo systemctl stop time.api.service && statusweb"
+alias statusweb="systemctl status time.api.service"
 
 alias startapache="sudo systemctl restart apache2.service && statusapache"
 alias stopapache="sudo systemctl stop apache2.service && statusapache"

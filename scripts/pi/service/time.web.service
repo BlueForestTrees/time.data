@@ -1,12 +1,12 @@
 [Unit]
-Description=time.web
+Description=time.api
 After=syslog.target rabbitmq-server.service
 
 [Service]
 EnvironmentFile=/var/lib/time.data/scripts/pi/time.env
 User=pi
 WorkingDirectory=/var/lib/time
-ExecStart=/usr/bin/java -jar /var/lib/time/time.web.jar
+ExecStart=/usr/bin/java -jar /var/lib/time/time.api.jar
 SuccessExitStatus=143
 
 [Install]

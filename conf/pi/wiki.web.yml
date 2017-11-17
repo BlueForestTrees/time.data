@@ -1,3 +1,3 @@
-indexDir: "${TIME_HOME}/indexes/mergeables/wiki"
+indexDir: "/var/lib/time/lucene"
 port: 8080
 searchPhrasePageSize: 40

@@ -1,4 +1,5 @@
 alias aliases="nano ~/.bash_aliases"
+alias aliases="nano ~/.bash_aliases"
 alias ports="sudo netstat -tulpn"
 alias update="source ~/.bashrc && cp /home/pi/.bash_aliases /var/lib/time.data/scripts/pi/.bash_aliases"
 alias psgrep='function _psgrep(){ ps -aux | grep "$1"; };_psgrep'
